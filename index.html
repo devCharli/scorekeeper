@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Score Keeper</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+  </head>
+  <body>
+    <div class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-half is-offset-one-quarter">
+            <div class="card">
+              <!-- card image -->
+              <div class="card-image">
+                <figure class="image is-2by1">
+                  <img
+                    src="https://images.unsplash.com/photo-1534158914592-062992fbe900?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cGluZyUyMHBvbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60"
+                    alt="Pingpong image"
+                  />
+                </figure>
+              </div>
+              <!-- card title -->
+              <header class="card-header">
+                <p class="card-header-title">Ping Pong Score Keeper</p>
+              </header>
+              <!-- card content -->
+              <div class="card-content">
+                <div class="content">
+                  <h1 class="title is-1">
+                    <span class="player1-score">0</span> to
+                    <span class="player2-score">0</span>
+                  </h1>
+                  <p class="subtitle">Use the buttons below to keep score.</p>
+                  <label for="score" class="label is-large is-inline"
+                    >Playign to</label
+                  >
+                  <div class="select is-rounded">
+                    <select name="score" id="score" class="score">
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <!-- buttons -->
+              <footer class="card-footer">
+                <button
+                  class="is-primary button card-footer-item is-large player1"
+                >
+                  +1 Player One
+                </button>
+                <button
+                  class="is-info button card-footer-item is-large player2"
+                >
+                  +2 Player Two
+                </button>
+                <button
+                  class="is-danger button card-footer-item is-large reset"
+                >
+                  Reset
+                </button>
+              </footer>
+            </div>
+            <!-- card ends -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
